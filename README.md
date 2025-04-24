@@ -157,7 +157,7 @@ Creates 3 MongoDB containers with `--replSet rs0` for replication  ( tells Mongo
 
 To spin up three MongoDB containers that will act as replica set members. This creates a foundation for high availability and data redundancy.  
  - Each container (mongo1, mongo2, mongo3) runs MongoDB with --replSet rs0 to prepare for joining a replica set.
- - rs0 is simply the name of the replica set. All nodes (containers or servers) that are supposed to work together in a replica set must use the same name.
+ - All nodes (containers or servers) that are supposed to work together in a replica set must use the same name.
  - A Docker network ensures they can talk to each other by name.
  
 📦 Think of this step as setting up 3 database servers ready to work together.  
