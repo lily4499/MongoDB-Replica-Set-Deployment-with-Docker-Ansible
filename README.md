@@ -154,8 +154,8 @@ f"Project setup completed at: {base_path}"
 
 ### 🔹 Step 1: Docker Compose for MongoDB Replica Set
 To spin up three MongoDB containers that will act as replica set members. This creates a foundation for high availability and data redundancy.  
-    -Each container (mongo1, mongo2, mongo3) runs MongoDB with --replSet rs0 to prepare for joining a replica set.  
-    -A Docker network ensures they can talk to each other by name.  
+    - Each container (mongo1, mongo2, mongo3) runs MongoDB with --replSet rs0 to prepare for joining a replica set.  
+    - A Docker network ensures they can talk to each other by name.  
 📦 Think of this step as setting up 3 database servers ready to work together.  
 
 Creates 3 MongoDB containers with `--replSet rs0` for replication.
@@ -212,6 +212,10 @@ docker-compose up -d
 ---
 
 ### 🔹 Step 2: Ansible Inventory File
+To tell Ansible where the MongoDB nodes are and how to connect to them.
+    - You list the containers (hosts) and assign ports or connection settings.
+    - Even though all containers run on the same host (localhost), this lets Ansible treat them like separate servers.
+🧭 It’s like giving Ansible a map of your MongoDB nodes.
 
 Defines the MongoDB hosts for Ansible.
 
