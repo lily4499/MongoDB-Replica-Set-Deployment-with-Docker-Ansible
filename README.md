@@ -369,11 +369,5 @@ You now have a **secure, high-availability MongoDB replica set** running with:
 
 ---
 
-## 📘 Next Steps (Optional Enhancements)
-
-- Integrate TLS for encryption
-- Add monitoring with MongoDB Exporter + Prometheus
-- Store secrets securely with Ansible Vault
-
 ---
 ```
