@@ -212,10 +212,10 @@ docker-compose up -d
 ---
 
 ### 🔹 Step 2: Ansible Inventory File
-To tell Ansible where the MongoDB nodes are and how to connect to them.
-    - You list the containers (hosts) and assign ports or connection settings.
-    - Even though all containers run on the same host (localhost), this lets Ansible treat them like separate servers.
-🧭 It’s like giving Ansible a map of your MongoDB nodes.
+To tell Ansible where the MongoDB nodes are and how to connect to them.  
+    - You list the containers (hosts) and assign ports or connection settings.  
+    - Even though all containers run on the same host (localhost), this lets Ansible treat them like separate servers.  
+🧭 It’s like giving Ansible a map of your MongoDB nodes.  
 
 Defines the MongoDB hosts for Ansible.
 
