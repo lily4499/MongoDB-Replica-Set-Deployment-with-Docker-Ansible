@@ -153,7 +153,7 @@ f"Project setup completed at: {base_path}"
 ## 🧱 Step-by-Step Breakdown
 
 ### 🔹 Step 1: Docker Compose for MongoDB Replica Set
-Creates 3 MongoDB containers with `--replSet rs0` for replication.
+Creates 3 MongoDB containers with `--replSet rs0` for replication  ( tells MongoDB:"You're part of a replica set named rs0.").
 
 To spin up three MongoDB containers that will act as replica set members. This creates a foundation for high availability and data redundancy.  
  - Each container (mongo1, mongo2, mongo3) runs MongoDB with --replSet rs0 to prepare for joining a replica set.
